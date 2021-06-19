@@ -6,7 +6,7 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 
-import { login } from "./actions/auth"
+import { login } from "./actions/auth.js"
 
 const required = (valued) => {
     if (!value) {
@@ -18,7 +18,7 @@ const required = (valued) => {
     }
 }
 
-const login = (props) => {
+const Login = (props) => {
     const form = useRef();
     const checkBtn = useRef();
 
@@ -48,7 +48,7 @@ const login = (props) => {
 
         form.current.validateAll();
 
-        if (checkBtn.current.context._errors.length === 0) {
+        if (checkBtn.current.context._erros.length === 0) {
             dispatch(login(username, password))
                 .then(() => {
                     props.history.push("/dashboard");
