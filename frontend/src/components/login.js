@@ -6,9 +6,9 @@ import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 
-import { login } from "./actions/auth.js"
+import { login } from "../actions/auth"
 
-const required = (valued) => {
+const required = (value) => {
     if (!value) {
         return (
             <div className="alert alert-danger" role="alert">
@@ -22,7 +22,7 @@ const Login = (props) => {
     const form = useRef();
     const checkBtn = useRef();
 
-    const [username, SetUsername] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [loading, setLoading] = useState(false);
 
@@ -91,3 +91,5 @@ const Login = (props) => {
         </div>
     )
 };
+
+export default Login;

@@ -52,7 +52,7 @@ const Register = () => {
     const form = useRef();
     const checkBtn = useRef();
 
-    const [username, SetUsername] = useState("");
+    const [username, setUsername] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [successfull, setSuccessfull] = useState("");
@@ -101,7 +101,6 @@ const Register = () => {
                     alt="profile-img"
                     className="profile-img-card"
                 />
-
                 <Form onSubmit={handleRegister} ref={form}>
                     {!successfull && (
                         <div>
@@ -150,10 +149,13 @@ const Register = () => {
                             <div className={successfull ? "alert alert-success" : "alert alert-danger"} role="alert">
                                 {message}
                             </div>
-                    )}
-                            <CheckButton style={{ display: none }} ref={checkBtn} />
+                        </div>
+                    )};
+                    <CheckButton style={{ display: "none" }} ref={checkBtn} />
                 </Form>
             </div>
-            )
+        </div>
+    );
 };
 
+export default Register;
