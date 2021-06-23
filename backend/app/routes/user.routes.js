@@ -36,9 +36,9 @@ module.exports = function (app) {
         controller.getTransaction
     )
 
-    app.get(
+   /* app.get(
         "api/user/:id/levelup", 
         [authJwt.verifyToken],
         controller.levelup
-    )
+    )*/
 };
