@@ -1,4 +1,3 @@
-const { values } = require("sequelize/types/lib/operators");
 const {
     user
 } = require("../models");

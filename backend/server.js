@@ -72,6 +72,7 @@ app.get('/', (req,res) => {
 
 require('./app/routes/auth.routes')(app);
 require('./app/routes/user.routes')(app);
+require('./app/routes/levelup.routes')(app);
 
 //vamos colocar o servidor para rodar: 
 // PORT maiusculo pq depois a gente pode colocar uma variavel de ambiente, 
