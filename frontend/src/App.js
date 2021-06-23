@@ -13,7 +13,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import Dashboard from "./components/Dashboard";
 import Homepage from "./components/Homepage";
-import Profile from "./components/Profile";
+
 
 
 const App = () => {
@@ -114,7 +114,6 @@ const App = () => {
                         <Route exact path={["/", "/homepage"]} component={Homepage} />
                         <Route exact path={"/login"} component={Login} />
                         <Route exact path={"/register"} component={Register} />
-                        <Route exact path={"/profile"} component={Profile} />
                         <Route exact path={"/user"} component={Dashboard} />
                     </Switch>
                 </div>
