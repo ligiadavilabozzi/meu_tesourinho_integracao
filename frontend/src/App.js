@@ -17,8 +17,7 @@ import Homepage from "./components/Homepage";
 
 
 const App = () => {
-    const [showModeratorBoard, setShowModeratorBoard] = useState(false);
-    const [showAdminBoard, setShowAdminBoard] = useState(false);
+    const [showUserBoard, setShowUserBoard] = useState(false);
     
     const { user: currentUser } = useSelector((state) => state.auth);
     const dispatch = useDispatch();
@@ -31,8 +30,7 @@ const App = () => {
 
     useEffect(() => {
         if (currentUser) {
-            setShowModeratorBoard(currentUser.roles.includes("ROLE_MODERATOR"));
-            setShowAdminBoard(currentUser.roles.includes("ROLE_ADMIN"));
+            setShowUserBoard(currentUser.roles.includes("ROLE_USER"));
         }
     }, [currentUser]);
 
@@ -53,25 +51,10 @@ const App = () => {
                                 Homepage
                             </Link>
                         </li>
-                        {showModeratorBoard && (
-                            <li className="nav-item">
-                                <Link to={"/mod"} className="nav-link">
-                                    Moderator Board
-                                </Link>
-                            </li>
-                        )}
-
-                        {showAdminBoard && (
-                            <li className="nav-item">
-                                <Link to={"/admin"} className="nav-link">
-                                    Admin Board
-                                </Link>
-                            </li>
-                        )}
 
                         {currentUser && (
                             <li className="nav-item">
-                                <Link to={"/user"} className="nav-link">
+                                <Link to={"/dashboard"} className="nav-link">
                                     User
                                 </Link>
                             </li>
@@ -114,7 +97,7 @@ const App = () => {
                         <Route exact path={["/", "/homepage"]} component={Homepage} />
                         <Route exact path={"/login"} component={Login} />
                         <Route exact path={"/register"} component={Register} />
-                        <Route exact path={"/user"} component={Dashboard} />
+                        <Route exact path={"/dashboard"} component={Dashboard} />
                     </Switch>
                 </div>
             </div>

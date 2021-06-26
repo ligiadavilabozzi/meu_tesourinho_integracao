@@ -1,4 +1,4 @@
-const {authJwt} = require("../middleware");
+const { authJwt } = require("../middleware");
 const controller = require("../controllers/user.controller");
 
 module.exports = function (app) {
@@ -19,26 +19,14 @@ module.exports = function (app) {
     );
 
     app.get(
-        "/api/mod",
-        [authJwt.verifyToken, authJwt.isModerator],
-        controller.moderatorBoard
-    );
-
-    app.get(
-        "/api/admin",
-        [authJwt.verifyToken, authJwt.isAdmin],
-        controller.adminBoard
-    );
-
-    app.get(
-        "/api/transactions", 
-        [authJwt.verifyToken], 
+        "/api/transactions",
+        [authJwt.verifyToken],
         controller.getTransaction
     )
 
-   /* app.get(
-        "api/user/:id/levelup", 
-        [authJwt.verifyToken],
-        controller.levelup
-    )*/
+    /* app.get(
+         "api/user/:id/levelup", 
+         [authJwt.verifyToken],
+         controller.levelup
+     )*/
 };
