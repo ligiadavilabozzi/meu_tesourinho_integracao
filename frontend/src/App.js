@@ -9,19 +9,32 @@ import { logout } from "./actions/auth";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import Login from "./components/Login";
-import Register from "./components/Register";
-import Dashboard from "./components/Dashboard";
-import Homepage from "./components/Homepage";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import Dashboard from "./pages/Dashboard";
+import Homepage from "./pages/Homepage";
 
+import JsonData from "./data/data.json"
+import SmoothScroll from "smooth-scroll"
 
+export const scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true,
+})
 
 const App = () => {
+    const [landingPageData, setLandingPageData] = useState({});
     const [showModeratorBoard, setShowModeratorBoard] = useState(false);
     const [showAdminBoard, setShowAdminBoard] = useState(false);
+
     
     const { user: currentUser } = useSelector((state) => state.auth);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        setLandingPageData(JsonData)
+    }, [])
+
 
     useEffect(() => {
         history.listen((location) => {
@@ -41,86 +54,12 @@ const App = () => {
     };
 
     return (
-        <Router history={history}>
-            <div>
-                <nav className="navbar navbar-expand navbar dark bg-dark">
-                    <Link to={"/"} className="navbar-brand">
-                        DH
-                    </Link>
-                    <div className="navbar-nav mr-auto">
-                        <li className="nav-item">
-                            <Link to={"/homepage"} className="nav-link">
-                                Homepage
-                            </Link>
-                        </li>
-                        {showModeratorBoard && (
-                            <li className="nav-item">
-                                <Link to={"/mod"} className="nav-link">
-                                    Moderator Board
-                                </Link>
-                            </li>
-                        )}
-
-                        {showAdminBoard && (
-                            <li className="nav-item">
-                                <Link to={"/admin"} className="nav-link">
-                                    Admin Board
-                                </Link>
-                            </li>
-                        )}
-
-                        {currentUser && (
-                            <li className="nav-item">
-                                <Link to={"/user"} className="nav-link">
-                                    User
-                                </Link>
-                            </li>
-                        )}
-
-                        {currentUser ? (
-                            <div className="navbar-nav ml-auto">
-                                <li className="nav-item">
-                                    <Link to={"/profile"} className="nav-link">
-                                        {currentUser.username}
-                                    </Link>
-                                </li>
-                                <li className="nav-item">
-                                    <a href="/login" className="nav-link" onClick={logOut}>
-                                        Logout
-                                    </a>
-                                </li>
-                            </div>
-                        ) : (
-
-                            <div className="navbar-nav ml-auto">
-                                <li className="nav-item">
-                                    <Link to={"/login"} className="nav-link">
-                                        Login
-                                    </Link>
-                                </li>
-
-                                <li className="nav-item">
-                                    <Link to={"/register"} className="nav-link">
-                                        Sign Up
-                                    </Link>
-                                </li>
-                            </div>
-                        )}
-                    </div>
-                </nav>
-
-                <div className="container mt-3">
-                    <Switch>
-                        <Route exact path={["/", "/homepage"]} component={Homepage} />
-                        <Route exact path={"/login"} component={Login} />
-                        <Route exact path={"/register"} component={Register} />
-                        <Route exact path={"/user"} component={Dashboard} />
-                    </Switch>
-                </div>
-            </div>
-        </Router>
+        <div>
+            <Homepage />
+        </div>
     );
 };
 
 
-export default App;
+export default App
+

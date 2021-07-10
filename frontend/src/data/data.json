@@ -1,0 +1,127 @@
+{
+    "Header": {
+
+        "title": "Meu Tesourinho",
+        "paragraph": "Uma plataforma feita para crianças que querem ir além!"
+
+    },
+    "About": {
+        "paragraph": "Educação financeira para crianças é um assunto que deve ser levado a sério, mas também pode ser divertido. E como qualquer aprendizado, requer tempo, afinal, os hábitos não são formados de um dia para o outro. O Meu tesourinho ajuda a ensinar a importância de saber gerir o próprio dinheiro!",
+        "Why": [
+            "Ensinamos de maneira lúdica",
+            "Objetivos simples",
+            "Maior plataforma direcionada à crianças"
+        ],
+        "Why2": [
+            "Incentivo ao consumo consciente",
+            "Jogos divertidos <3",
+            "Dicas para o cotidiano"
+        ]
+    },
+    "Services": [{
+            "icon": "fa fa-user",
+            "name": "1. Já é cadastrado?",
+            "text": "O primeiro passo é criar o cadastro para ter acesso à página de clientes"
+        },
+        {
+            "icon": "fa fa-check-square-o",
+            "name": "2. Defina a meta.",
+            "text": "A criança precisará definir uma meta. Quanto economizará?"
+        },
+        {
+            "icon": "fa fa-paper-plane",
+            "name": "3. Atinja o objetivo!",
+            "text": "A criança adicionará as entradas, que no caso pode ser a mesada, e as saídas, que serão as despesas que teve. Assim, consiguirá acompanhar como foi o processo até alcançar o objetivo."
+        }
+
+
+    ],
+    "Testimonials": [{
+            "img": "img/testimonials/01.jpg",
+            "text": "\"Aprendi que para comprar o que quero, preciso guardar pelo menos um pouquinho de dinheiro toda vez que ganho minha mesada.\"",
+            "name": "Ana Bia"
+        },
+        {
+            "img": "img/testimonials/02.jpg",
+            "text": "\"Toda vez que ganho dinheiro de presente, já abro o site do Meu Tesourinho pra anotar lá. Isso me ajuda a lembrar quanto falta pra chegar até o Meu tesourinho de verdade\"",
+            "name": "Arthur"
+        },
+        {
+            "img": "img/testimonials/03.jpg",
+            "text": "\"Antes eu sempre queria comprar doces no recreio. Agora eu preciso pensar antes de comprar pra ter certeza se isso não vai atrapalhar a chegar nas coisas que quero. Daí peço ajuda da minha mãe pra olhar quanto falta no Meu Tesourinho.\"",
+            "name": "Caroline"
+        },
+        {
+            "img": "img/testimonials/04.jpg",
+            "text": "\"A Bia sempre foi muito antenada sobre o que fazer quando ganhava a mesada, agora ela consegue fazer um plano realista, com a ajuda da plataforma.\"",
+            "name": "Cristina - Mãe da Ana Bia"
+        },
+        {
+            "img": "img/testimonials/05.jpg",
+            "text": "\"O site tem sido uma ótima forma de ajudar na educação financeira do meu filho. Abre margem para sempre conversarmos de uma maneira divertida sobre o assunto.\"",
+            "name": "Roberto - Pai do Arthur"
+        },
+        {
+            "img": "img/testimonials/06.jpg",
+            "text": "\"É tão bacana ver que a Carol tem mais consciência do valor do dinheiro, mesmo que seja em pequenos acontecimentos, como no recreio da escola.\"",
+            "name": "Renata - Mãe da Caroline"
+        }
+    ],
+    "Team": [{
+            "img": "img/team/01.jpg",
+            "name": "Lígia Bozzi",
+            "job": "Scrum Master"
+        },
+        {
+            "img": "img/team/02.jpg",
+            "name": "Victoria Cavalcante",
+            "job": "Product Owner"
+        }, {
+            "img": "img/team/03.jpg",
+            "name": "Fabiana Salinas",
+            "job": "Web Developer"
+        },
+        
+        {
+            "img": "img/team/04.jpg",
+            "name": "Leticia Cruz",
+            "job": "Web Developer"
+        },
+
+        {
+            "img": "img/team/05.jpg",
+            "name": "Jessika Macedo",
+            "job": "Web Developer"
+        }
+        
+    ],
+    "Contact": {
+        "address": "São Paulo ",
+        "phone": "+55 11 3333-0000",
+        "email": "lovelacecode@meutesourinho.com",
+        "facebook": "fb.com",
+        "twitter": "twitter.com",
+        "youtube": "youtube.com"
+    },
+    "Features": [{
+            "icon": "fa fa-calculator",
+            "title": "É divertido aprender",
+            "text": "Aprender não precisa ser chato, ainda mais se tratando de dinheiro."
+        },
+        {
+            "icon": "fa fa-child",
+            "title": "+10 anos",
+            "text": "Foco em crianças acima de 10 anos."
+        },
+        {
+            "icon": "fa fa-gamepad",
+            "title": "Interativo",
+            "text": "Possivel de ver o progresso na tela do computador."
+        },
+        {
+            "icon": "fa fa-magic",
+            "title": "Fácil e intuitivo",
+            "text": "Gastos e Entradas são inseridos de maneira fácil de usar e intuitiva."
+        }
+    ]
+}
