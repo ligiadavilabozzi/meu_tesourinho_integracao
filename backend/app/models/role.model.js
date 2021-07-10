@@ -1,7 +1,6 @@
 module.exports = (sequelize, Sequelize) =>{
     const Role = sequelize.define("roles",{
-        //criamos o id , nao ciramos no user, não tem problema pq o sequelize cria para gente. 
-        id: { //colocamos esse id pq queremos que ele obedeça as definições abaixo: 
+        id: { 
             type: Sequelize.INTEGER,
             primaryKey: true
         }, 
