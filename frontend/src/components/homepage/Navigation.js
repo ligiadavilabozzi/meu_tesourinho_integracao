@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom"
 
 export const Navigation = (props) => {
     return (
@@ -59,10 +59,13 @@ export const Navigation = (props) => {
                             </a>
                         </li>
                         <li>
-                        <Link to= {"/login"}>Login</Link>
+                        <a href= "/login" className='page-scroll'>Login</a>
                         </li>
                         <li>
-                        <Link to= {"/register"}>Cadastre-se</Link>
+                        <a href= "/register" className='page-scroll'>Cadastre-se</a>
+                        </li>
+                        <li>
+                        <a href= "/user" className='page-scroll'>Dashboard</a>
                         </li>
                     </ul>
                 </div>

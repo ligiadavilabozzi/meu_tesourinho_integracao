@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import UserService from "../service/user.service";
 import { About } from "../components/homepage/About";
 import { Contact } from "../components/homepage/Contact";
 import { Features } from "../components/homepage/Features";
