@@ -41,7 +41,7 @@ export const Contact = (props) => {
                             <div className='section-title'>
                                 <h2>Contato</h2>
                                 <p>
-                                    Gostou do Meu Tesourinho? Preencha o forumário abaixo para entrar em contato!
+                                    Gostou do Meu Tesourinho? Preencha o formulário abaixo para entrar em contato!
                                 </p>
                             </div>
                             <form name='sentMessage' validate onSubmit={handleSubmit}>

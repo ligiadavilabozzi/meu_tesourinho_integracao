@@ -19,7 +19,7 @@ export const Navigation = (props) => {
                         <span className='icon-bar'></span>{' '}
                     </button>
                     <a className='navbar-brand page-scroll' href='#page-top'>
-                        Meu Tesourinho
+                        <img src="img/logo/logo-tesourinho branco"></img>
                     </a>{' '}
                 </div>
 
@@ -27,15 +27,15 @@ export const Navigation = (props) => {
                     className='collapse navbar-collapse'
                     id='bs-example-navbar-collapse-1'
                 >
-                    <ul className='nav navbar-nav navbar'>
-                        <li>
-                            <a href='#features' className='page-scroll'>
-                                Features
-                            </a>
-                        </li>
+                    <ul id= "#menu" className='nav navbar-nav navbar-right'>
                         <li>
                             <a href='#about' className='page-scroll'>
                                 QUEM SOMOS
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#features' className='page-scroll'>
+                                Benefícios
                             </a>
                         </li>
                         <li>

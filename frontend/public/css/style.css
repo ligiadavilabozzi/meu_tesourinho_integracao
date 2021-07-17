@@ -1,5 +1,5 @@
 body, html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
@@ -14,7 +14,7 @@ h2 {
 	text-transform: uppercase;
 	margin: 0 0 20px 0;
 	font-weight: 800;
-	font-size: 36px;
+	font-size: 50px;
 	color: #34377A;
 }
 h3 {
@@ -40,7 +40,7 @@ p.intro {
 	line-height: 24px;
 }
 a {
-	color: #608dfd;
+	color: #f1f1f1;
 	font-weight: 400;
 }
 a:hover, a:focus {
@@ -70,7 +70,7 @@ hr {
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: #FFA746;
+	background-color: #34377A;
 	border-color: rgba(231, 231, 231, 0);
 	box-shadow: 0 0 10px rgba(0,0,0,0.15)
 }
@@ -78,18 +78,19 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
-	color: #333;
+	color: #ffff;
 	text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	color: #555;
+	color: #ffff;
 	font-size: 15px;
 	font-weight: 400;
 	padding: 8px 2px;
 	border-radius: 0;
 	margin: 9px 20px 0 20px;
+	text-decoration: none;
 }
 #menu.navbar-default .navbar-nav > li > a:after {
 	display: block;
@@ -137,6 +138,7 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
+	font-size: 35px
 }
 .section-title h2::after {
 	position: absolute;
@@ -149,7 +151,7 @@ hr {
 	left: 50%;
 }
 .section-title p {
-	font-size: 18px;
+	font-size: 20px;
 }
 .btn-custom {
 	font-family: 'Raleway', sans-serif;
@@ -245,13 +247,14 @@ header .intro-text {
 	padding: 100px 0;
 }
 #about h3 {
-	font-size: 22px;
+	font-size: 25px;
 	margin: 0 0 20px 0;
 }
 #about h2 {
 	position: relative;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
+	font-size: 35px
 }
 #about h2::after {
 	position: absolute;
@@ -267,12 +270,13 @@ header .intro-text {
 	margin-left: 6px;
 	list-style: none;
 	padding: 0;
+	font-size: 15px
 }
 #about .about-text li:before {
 	content: '\f00c';
 	font-family: 'FontAwesome';
 	color: #5ca9fb;
-	font-size: 11px;
+	font-size: 16px;
 	font-weight: 300;
 	padding-right: 8px;
 }

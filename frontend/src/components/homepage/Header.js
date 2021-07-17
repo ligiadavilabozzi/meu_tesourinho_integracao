@@ -9,7 +9,7 @@ export const Header = (props) => {
                                 <h1>
                                     Meu Tesourinho
                                 </h1>
-                                <p>Uma plataforma feita para crianças que querem ir além!"
+                                <p>Uma plataforma feita para crianças que querem ir além!
                                 </p>
                                 <a
                                     href='#features'
