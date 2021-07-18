@@ -52,9 +52,9 @@ const Login = (props) => {
     }
     return (
         <div className="corpoLogin col-md-4">
-            <div className="card card-container">
-                <img src="../../../../../logo-tesourinhobranco.png" alt="profile-img" className="profile-img-card" />
-                <p>Seja bem-vindo</p>
+            <div className='avatar'>
+                <img src="img/logo/logo-tesourinhocolorido.png" width='300px' alt="Logo Meu Tesourinho" />
+                <p>Seja bem-vindo!</p>
             </div>
             <Form onSubmit={handleLogin} ref={form}>
                 <div className="form-group">

@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
-
 import Form from "react-validation/build/form";
 import Input from "react-validation/build/input";
 import CheckButton from "react-validation/build/button";
 import { isEmail } from "validator";
+
 
 import { register } from "../actions/auth";
 
@@ -42,7 +42,7 @@ const validPassword = (value) => {
     if (value.length < 6 || value.length > 40) {
         return (
             <div className="alert alert-danger" role="alert">
-                A senha tem que ter entre 6 e 40 caracteres
+                A password tem que ter entre 6 e 40 caracteres
             </div>
         );
     }
@@ -94,60 +94,85 @@ const Register = () => {
     };
 
     return (
-        <div className="col-md-12">
-            <div className="card card-container">
-                <Form onSubmit={handleRegister} ref={form}>
-                    {!successfull && (
-                        <div>
-                            <div className="form-group">
-                                <label htmlFor="username">Username</label>
-                                <Input
-                                    type="text"
-                                    className="form-control"
-                                    name="username"
-                                    value={username}
-                                    onChange={onChangeUsername}
-                                    validations={[required, validUsername]}
-                                />
-                            </div>
+        <div className="App">
+            <div className='container'>
 
-                            <div className="form-group">
-                                <label htmlFor="email">Email</label>
-                                <Input
-                                    type="text"
-                                    className="form-control"
-                                    name="email"
-                                    value={email}
-                                    onChange={onChangeEmail}
-                                    validations={[required, validEmail]}
-                                />
-                            </div>
+                <div class="content">
+                    <div className="row" id="border">
+                        <div id="cadastro" className= "col-md-4">
 
-                            <div className="form-group">
-                                <label htmlFor="password">Password</label>
-                                <Input
-                                    type="text"
-                                    className="form-control"
-                                    name="password"
-                                    value={password}
-                                    onChange={onChangePassword}
-                                    validations={[required, validPassword]}
-                                />
+                            <div className='avatar'>
+                                <img src="img/logo/logo-tesourinhocolorido.png" width='300px' alt="Logo Meu Tesourinho" />
                             </div>
-                            <div className="form-group">
-                                <button className="btn btn-primary btn-block">Sign Up</button>
-                            </div>
+                            <h1 className="h1singup">Cadastre-se</h1>
+
+
+                            <Form onSubmit={handleRegister} ref={form}>
+                                {!successfull && (
+                                    <div>
+                                        <div className="form-group">
+                                            <label htmlFor="username">Nome</label>
+                                            <Input
+                                                type="text"
+                                                className="form-control"
+                                                name="username"
+                                                value={username}
+                                                onChange={onChangeUsername}
+                                                validations={[required, validUsername]}
+                                            />
+                                        </div>
+
+                                        <div className="form-group">
+                                            <label htmlFor="email">E-mail</label>
+                                            <Input
+                                                type="text"
+                                                className="form-control"
+                                                name="email"
+                                                value={email}
+                                                onChange={onChangeEmail}
+                                                validations={[required, validEmail]}
+                                            />
+                                        </div>
+
+                                        <div className="form-group">
+                                            <label htmlFor="password">Senha</label>
+                                            <Input
+                                                type="text"
+                                                className="form-control"
+                                                name="password"
+                                                value={password}
+                                                onChange={onChangePassword}
+                                                validations={[required, validPassword]}
+                                            />
+                                        </div>
+                                        <br></br>
+                                        <div className="form-group">
+                                            <button id="btncadastro" className="btn btn-primary btn-block">Cadastre-se</button>
+                                        </div>
+                                    </div>
+                                )}
+                                {message && (
+                                    <div className="form-group">
+                                        <div className={successfull ? "alert alert-success" : "alert alert-danger"} role="alert">
+                                            {message}
+                                        </div>
+                                    </div>
+                                )};
+                                <CheckButton style={{ display: "none" }} ref={checkBtn} />
+
+                                <div className='copy'>
+                                    <p>Copyright © Meu Tesourinho 2021.</p>
+                                </div>
+                                <br></br>
+
+                                <p class="link">
+                                    Já tem conta? 
+                                    <a href="#paralogin"> Login</a>
+                                </p>
+                            </Form>
                         </div>
-                    )}
-                    {message && (
-                        <div className="form-group">
-                            <div className={successfull ? "alert alert-success" : "alert alert-danger"} role="alert">
-                                {message}
-                            </div>
-                        </div>
-                    )};
-                    <CheckButton style={{ display: "none" }} ref={checkBtn} />
-                </Form>
+                    </div>
+                </div>
             </div>
         </div>
     );
