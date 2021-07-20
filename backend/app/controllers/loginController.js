@@ -1,7 +1,7 @@
 const bcrypt = require('bcrypt');
 const { validationResult } = require('express-validator');
 const search = require('../db/userQuerys')
-const config = require('../config/jwtConfig')
+const config = require('../config/auth.config')
 const jwt = require('jsonwebtoken')
 
 const authUser = async (req, res) => {

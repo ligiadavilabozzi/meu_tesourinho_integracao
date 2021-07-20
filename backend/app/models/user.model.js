@@ -4,13 +4,13 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  /*class Users extends Model {
+  class Users extends Model {
 
-    static associate(models) {
+    /*static associate(models) {
       Users.hasMany(models.tabela);
 
-    }
-  };*/
+    }*/};
+
 
 
   Users.init({

@@ -2,20 +2,26 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "Configurar o backend: \r const express = require(\"express\");\r const cors = require(\"cors\");",
-  "main": "server.js",
+  "main": "app.js",
   "dependencies": {
     "@types/sequelize": "^4.28.9",
+    "bcrypt": "^5.0.1",
     "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.12.0",
+    "http-errors": "^1.8.0",
     "jsonwebtoken": "^8.5.1",
     "mysql2": "^2.2.5",
+    "path": "^0.12.7",
     "sequelize": "^6.6.2"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",

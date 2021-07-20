@@ -1,12 +1,3 @@
-/*
- * Nivo Lightbox v1.2.0
- * http://dev7studios.com/nivo-lightbox
- *
- * Copyright 2013, Dev7studios
- * Free to use and abuse under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-
 .nivo-lightbox-overlay {
 	position: fixed;
 	top: 0;
@@ -80,7 +71,6 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	/* https://bugzilla.mozilla.org/show_bug.cgi?id=308801 */
 }
 .nivo-lightbox-error {
 	display: table;

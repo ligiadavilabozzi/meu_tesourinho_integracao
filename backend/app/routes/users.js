@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 
-const validateInput = require('../middlewares/validateInput')
-const verifySignup = require('../middlewares/verifySignup')
-const usersController = require('../controllers/usersController')
-const jwtAuth = require('../middlewares/jwtAuth');
+const validateInput = require('../middleware/validateInput')
+const verifySignup = require('../middleware/verifySignup')
+const usersController = require('../controllers/userController')
+const jwtAuth = require('../middleware/authJwt');
 
 
 
