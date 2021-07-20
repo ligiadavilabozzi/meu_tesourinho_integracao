@@ -138,7 +138,8 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
-	font-size: 35px
+	font-size: 35px;
+	font-weight: bolder;
 }
 .section-title h2::after {
 	position: absolute;
@@ -149,6 +150,7 @@ hr {
 	bottom: 0;
 	margin-left: -30px;
 	left: 50%;
+	font-weight: bolder;
 }
 .section-title p {
 	font-size: 20px;
@@ -159,14 +161,16 @@ hr {
 	color: #fff;
 	background-color: #f39c12;
 	background-image: linear-gradient(to right, #f39c12 0%, #f39c12 100%);
-	padding: 14px 34px;
+	padding: 30px 30px;
 	letter-spacing: 1px;
 	margin: 0;
 	font-size: 25px;
-	font-weight: 600;
+	font-weight: bold;
 	border-radius: 25px;
 	transition: all 0.5s linear;
 	border: 0;
+	width: 25vh;
+	height: 30px;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
@@ -249,12 +253,16 @@ header .intro-text {
 #about h3 {
 	font-size: 25px;
 	margin: 0 0 20px 0;
+	text-align: center;
+	font-weight: bold;
 }
 #about h2 {
 	position: relative;
 	margin-bottom: 15px;
 	padding-bottom: 15px;
-	font-size: 35px
+	font-size: 35px;
+	text-align: center;
+	font-weight: bolder;
 }
 #about h2::after {
 	position: absolute;
@@ -263,7 +271,10 @@ header .intro-text {
 	height: 4px;
 	width: 60px;
 	bottom: 0;
-	left: 0;
+	margin-left: -30px;
+	left: 50%;
+	font-weight: bolder;
+
 }
 #about .about-text li {
 	margin-bottom: 6px;

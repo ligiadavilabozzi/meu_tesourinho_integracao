@@ -17,10 +17,10 @@ export const Navigation = (props) => {
                         <span className='icon-bar'></span>{' '}
                         <span className='icon-bar'></span>{' '}
                     </button>
-                    <a className='navbar-brand page-scroll' href='#page-top'>
-                        <img src="img/logo/logo-tesourinho branco"></img>
-                    </a>{' '}
                     <div className='navbar-header'>
+                    <a className='navbar-brand page-scroll' href='#page-top'>
+                            <img src="../../../public/img/logo/logo-tesourinhocolorido.png"/>
+                    </a>
                         <div
                             className='collapse navbar-collapse'
                             id='bs-example-navbar-collapse-1'
