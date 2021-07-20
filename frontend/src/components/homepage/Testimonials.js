@@ -6,7 +6,6 @@ export const Testimonials = (props) => {
             <h2>O que dizem nossos clientes mirins</h2>
           </div>
           <div className='row'>
-          
                   <div className='col-md-4'>
                     <div className='testimonial'>
                       <div className='testimonial-image'>
@@ -39,42 +38,6 @@ export const Testimonials = (props) => {
                       <div className='testimonial-content'>
                         <p>Antes eu sempre queria comprar doces no recreio. Agora eu preciso pensar antes de comprar pra ter certeza se isso não vai atrapalhar a chegar nas coisas que quero. Daí peço ajuda da minha mãe pra olhar quanto falta no Meu Tesourinho.</p>
                         <div className='testimonial-meta'>Caroline</div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div className='col-md-4'>
-                    <div className='testimonial'>
-                      <div className='testimonial-image'>
-                        <img src="img/testimonials/03.jpg" alt='' />
-                      </div>
-                      <div className='testimonial-content'>
-                        <p>A Bia sempre foi muito antenada sobre o que fazer quando ganhava a mesada, agora ela consegue fazer um plano realista, com a ajuda da plataforma.</p>
-                        <div className='testimonial-meta'>Cristina - Mãe da Ana Bia</div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div className='col-md-4'>
-                    <div className='testimonial'>
-                      <div className='testimonial-image'>
-                        <img src="img/testimonials/03.jpg" alt='' />
-                      </div>
-                      <div className='testimonial-content'>
-                        <p>O site tem sido uma ótima forma de ajudar na educação financeira do meu filho. Abre margem para sempre conversarmos de uma maneira divertida sobre o assunto.</p>
-                        <div className='testimonial-meta'>Roberto - Pai do Arthur</div>
-                      </div>
-                    </div>
-                  </div>
-  
-                  <div className='col-md-4'>
-                    <div className='testimonial'>
-                      <div className='testimonial-image'>
-                        <img src="img/testimonials/03.jpg" alt='' />
-                      </div>
-                      <div className='testimonial-content'>
-                        <p>É tão bacana ver que a Carol tem mais consciência do valor do dinheiro, mesmo que seja em pequenos acontecimentos, como no recreio da escola.</p>
-                        <div className='testimonial-meta'>Renata - Mãe da Caroline</div>
                       </div>
                     </div>
                   </div>

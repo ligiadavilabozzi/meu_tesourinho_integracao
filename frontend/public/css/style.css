@@ -70,23 +70,23 @@ hr {
 	transition: all 0.8s;
 }
 #menu.navbar-default {
-	background-color: #34377A;
+	background-color: #ffff;
 	border-color: rgba(231, 231, 231, 0);
-	box-shadow: 0 0 10px rgba(0,0,0,0.15)
+	box-shadow: 0 0 20px rgba(0,0,0,0.15)
 }
 #menu a.navbar-brand {
 	font-family: 'Raleway', sans-serif;
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: 700;
-	color: #ffff;
+	color: #34377A;
 	text-transform: uppercase;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
-	color: #ffff;
+	color: #34377A;
 	font-size: 15px;
-	font-weight: 400;
+	font-weight: 500;
 	padding: 8px 2px;
 	border-radius: 0;
 	margin: 9px 20px 0 20px;
@@ -99,7 +99,7 @@ hr {
 	bottom: -1px;
 	width: 0;
 	height: 2px;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+	background: linear-gradient(to right, #f39c12 0%, #f39c12 100%);
 	content: "";
 	transition: width 0.2s;
 }
@@ -116,7 +116,7 @@ hr {
 	bottom: -1px !important;
 	width: 100% !important;
 	height: 2px !important;
-	background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
+	background: linear-gradient(to right, #f39c12 0%, #f39c12 100%) !important;
 	content: "" !important;
 	transition: width 0.2s !important;
 }
@@ -143,7 +143,7 @@ hr {
 .section-title h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	background: linear-gradient(to right, #FFA746 0%, #f39c12 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -157,13 +157,13 @@ hr {
 	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
-	background-color: #5ca9fb;
-	background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+	background-color: #f39c12;
+	background-image: linear-gradient(to right, #f39c12 0%, #f39c12 100%);
 	padding: 14px 34px;
 	letter-spacing: 1px;
 	margin: 0;
-	font-size: 15px;
-	font-weight: 500;
+	font-size: 25px;
+	font-weight: 600;
 	border-radius: 25px;
 	transition: all 0.5s linear;
 	border: 0;
@@ -171,7 +171,7 @@ hr {
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	color: #fff;
 	background-image: none;
-	background-color: #6372ff;
+	background-color: #f1f1f1;
 }
 .btn:active, .btn.active {
 	background-image: none;
@@ -202,7 +202,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro h1 {
 	font-family: 'Raleway', sans-serif;
 	color: #fff;
-	font-size: 82px;
+	font-size: 50px;
 	font-weight: 700;
 	text-transform: uppercase;
 	margin-top: 0;
@@ -239,7 +239,7 @@ header .intro-text {
 	height: 100px;
 	padding: 30px 0;
 	border-radius: 50%;
-	background: linear-gradient(to right, #33A9AB 0%, #33A9AB 100%);
+	background: linear-gradient(to right, #FFA746 0%, #FFA746 100%);
 	box-shadow: 10px 10px 10px rgba(0,0,0,.05);
 }
 /* About Section */
@@ -259,7 +259,7 @@ header .intro-text {
 #about h2::after {
 	position: absolute;
 	content: "";
-	background: linear-gradient(to right, #33A9AB 0%, #33A9AB 100%);
+	background: linear-gradient(to right, #FFA746 0%, #f39c12 100%);
 	height: 4px;
 	width: 60px;
 	bottom: 0;
@@ -275,7 +275,7 @@ header .intro-text {
 #about .about-text li:before {
 	content: '\f00c';
 	font-family: 'FontAwesome';
-	color: #5ca9fb;
+	color: #f39c12;
 	font-size: 16px;
 	font-weight: 300;
 	padding-right: 8px;

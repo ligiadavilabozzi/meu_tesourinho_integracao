@@ -7,7 +7,7 @@ export const Header = (props) => {
                         <div className='row'>
                             <div className='col-md-8 col-md-offset-2 intro-text'>
                                 <h1>
-                                    Meu Tesourinho
+                                    Educação financeira de um modo divertido
                                 </h1>
                                 <p>Uma plataforma feita para crianças que querem ir além!
                                 </p>
