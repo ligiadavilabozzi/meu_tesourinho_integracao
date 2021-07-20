@@ -59,49 +59,66 @@ const Login = (props) => {
         return <Redirect to="/dashboard" />
     }
     return (
-        <div className="corpoLogin col-md-4">
-            <div className='avatar'>
-                <img src="img/logo/logo-tesourinhocolorido.png" width='300px' alt="Logo Meu Tesourinho" />
-                <p>Seja bem-vindo!</p>
+        <div className= "App">
+            <div className = "container">
+                <div className="corpoLogin col-md">
+                    <div className='avatar'>
+                        <img src="img/logo/logo-tesourinhocolorido.png" width='300px' alt="Logo Meu Tesourinho" />
+                        <p>Seja bem-vindo!</p>
+                    </div>
+                    <Form onSubmit={handleLogin} ref={form}>
+                        <div className="form-group">
+                            <label htmlFor="username">Usuário</label>
+                            <Input
+                                type="text"
+                                className="form-control"
+                                name="username"
+                                value={username}
+                                onChange={onChangeUsername}
+                                validations={[required]}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="email">E-mail</label>
+                            <Input
+                                type="email"
+                                className="form-control"
+                                name="email"
+                                value={email}
+                                onChange={onChangeEmail}
+                                validations={[required]}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label htmlFor="password">Senha</label>
+                            <Input
+                                type="password"
+                                className="form-control"
+                                name="password"
+                                value={password}
+                                onChange={onChangePassword}
+                                validations={[required]}
+                            />
+                        </div>
+                        <div className="form-group">
+                            <button className="btn btn-primary btn-block">Entrar</button>
+                        </div>
+                    </Form>
+                    <br></br>
+                    <p class="link">
+                        Ainda não tem conta? 
+                        <a href="/register"> Faça seu cadastro</a>
+                    </p>
+                    <br></br>
+                </div>
             </div>
-            <Form onSubmit={handleLogin} ref={form}>
-                <div className="form-group">
-                    <label htmlFor="username">Usuário</label>
-                    <Input
-                        type="text"
-                        className="form-control"
-                        name="username"
-                        value={username}
-                        onChange={onChangeUsername}
-                        validations={[required]}
-                    />
+            <div id='footer'>
+                <div className='container text-center'>
+                    <p>
+                        &copy; LOVELACE CODE
+                    </p>
                 </div>
-                <div className="form-group">
-                    <label htmlFor="email">E-mail</label>
-                    <Input
-                        type="email"
-                        className="form-control"
-                        name="email"
-                        value={email}
-                        onChange={onChangeEmail}
-                        validations={[required]}
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="password">Senha</label>
-                    <Input
-                        type="password"
-                        className="form-control"
-                        name="password"
-                        value={password}
-                        onChange={onChangePassword}
-                        validations={[required]}
-                    />
-                </div>
-                <div className="form-group">
-                    <button className="btn btn-primary btn-block">Entrar</button>
-                </div>
-            </Form>
+            </div>
         </div>
     )
 };

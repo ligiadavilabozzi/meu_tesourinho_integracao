@@ -96,17 +96,13 @@ const Register = () => {
     return (
         <div className="App">
             <div className='container'>
-
                 <div class="content">
                     <div className="row" id="border">
-                        <div id="cadastro" className= "col-md-4">
-
+                        <div id="cadastro" className= "col-md">
                             <div className='avatar'>
                                 <img src="img/logo/logo-tesourinhocolorido.png" width='300px' alt="Logo Meu Tesourinho" />
                             </div>
                             <h1 className="h1singup">Cadastre-se</h1>
-
-
                             <Form onSubmit={handleRegister} ref={form}>
                                 {!successfull && (
                                     <div>
@@ -133,7 +129,6 @@ const Register = () => {
                                                 validations={[required, validEmail]}
                                             />
                                         </div>
-
                                         <div className="form-group">
                                             <label htmlFor="password">Senha</label>
                                             <Input
@@ -159,22 +154,25 @@ const Register = () => {
                                     </div>
                                 )};
                                 <CheckButton style={{ display: "none" }} ref={checkBtn} />
-
-                                <div className='copy'>
-                                    <p>Copyright © Meu Tesourinho 2021.</p>
-                                </div>
                                 <br></br>
-
                                 <p class="link">
                                     Já tem conta? 
                                     <a href="#paralogin"> Login</a>
                                 </p>
+                                <br></br>
                             </Form>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div id='footer'>
+                <div className='container text-center'>
+                    <p>
+                        &copy; LOVELACE CODE
+                    </p>
+                </div>
+            </div>
+        </div> 
     );
 };
 
