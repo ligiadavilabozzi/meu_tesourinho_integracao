@@ -1,16 +1,31 @@
-module.exports = (sequelize, Sequelize) => {
-    //vamos criar a model de user e define para mim essa model e vamos passar um objeto de usuário
-    const User = sequelize.define('users', {
-        username: {
-        type: Sequelize.STRING
-    }, 
-    email:{
-        type: Sequelize.STRING
-    }, 
-    password: {
-        type: Sequelize.STRING
-    }
-}); 
-//retornar o usuário 
-return User;
-}
+const { v4: uuidv4 } = require('uuid');
+'use strict';
+const {
+  Model
+} = require('sequelize');
+module.exports = (sequelize, DataTypes) => {
+  class Users extends Model {
+
+    /*static associate(models) {
+      Users.hasMany(models.tabela);
+
+    }*/};
+
+
+
+  Users.init({
+    id: {
+      type: DataTypes.STRING,
+      primaryKey: true,
+      allowNull: false,
+      defaultValue: () => uuidv4(),
+    },
+    nome: DataTypes.STRING,
+    email: DataTypes.STRING,
+    senha: DataTypes.STRING
+  }, {
+    sequelize,
+    modelName: 'Users',
+  });
+  return Users;
+};
