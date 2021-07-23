@@ -4,9 +4,9 @@ import Modal from 'react-modal'
 
 import {useTransactions } from './hooks/useTransactions'
 
-// import closeImg from './assets/close.svg'
-// import incomeImg from "./assets/income.svg"
-// import outcomeImg from "./assets/outcome.svg"
+ import closeImg from './assets/close.svg'
+ import incomeImg from "./assets/income.svg"
+ import outcomeImg from "./assets/outcome.svg"
 
 import { Container, TransactionTypeContainer, RadioBox } from '../../styles/styles_NewTransactionModal'
 
@@ -57,7 +57,7 @@ export function NewTransactionModal({
                 onClick={onRequestClose}
                 className="react-modal-close"
             >
-                <img src="" alt="Fechar Botão" />
+                <img src={closeImg} alt="Fechar Botão" />
             </button>
 
             <Container onSubmit={handleCreateNewTransaction}>
@@ -83,7 +83,7 @@ export function NewTransactionModal({
                         onClick={() => { setType('deposit') }}
                         activeColor="green"
                     >
-                        {/* <img src={incomeImg} alt="Entrada" /> */}
+                         <img src={incomeImg} alt="Entrada" /> 
                         <span>Entrada</span>
                     </RadioBox>
 
@@ -94,7 +94,7 @@ export function NewTransactionModal({
                         activeColor="red"
                     >
 
-                        {/* <img src={outcomeImg} alt="Saída" /> */}
+                         <img src={outcomeImg} alt="Saída" /> 
                         <span>Saída</span>
                     </RadioBox>
 
