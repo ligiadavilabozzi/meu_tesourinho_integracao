@@ -4,7 +4,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Users extends Model {
+  class User extends Model {
 
     /*static associate(models) {
       Users.hasMany(models.tabela);
@@ -13,19 +13,19 @@ module.exports = (sequelize, DataTypes) => {
 
 
 
-  Users.init({
+  User.init({
     id: {
       type: DataTypes.STRING,
       primaryKey: true,
       allowNull: false,
       defaultValue: () => uuidv4(),
     },
-    nome: DataTypes.STRING,
+    username: DataTypes.STRING,
     email: DataTypes.STRING,
-    senha: DataTypes.STRING
+    password: DataTypes.STRING
   }, {
     sequelize,
-    modelName: 'Users',
+    modelName: 'User',
   });
-  return Users;
+  return User;
 };

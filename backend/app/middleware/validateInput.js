@@ -7,7 +7,7 @@ const auth = (req, res, next) => {
 const dateValidation = () => {
     let validations = [
         check("email").isEmail().withMessage("Email inválido"),
-        check("senha")
+        check("password")
             .isLength({ min: 3 })
             .withMessage("Senha deve conter mínimo 6 caracteres"),
         body("confirmarSenha").custom((value, { req }) => {
@@ -23,7 +23,7 @@ const dateValidation = () => {
 const inputsValidationSignin = () => {
     let validations = [
         check("email").isEmail().withMessage("Email inválido"),
-        check("senha")
+        check("password")
             .isLength({ min: 3 })
             .withMessage("Senha deve conter mínimo 6 caracteres"),
     ];

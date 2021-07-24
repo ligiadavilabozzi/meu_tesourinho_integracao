@@ -14,7 +14,7 @@ var loginRouter = require("./app/routes/login");
 
 var app = express();
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(
   session({
     secret: "lovelacecode",
@@ -47,4 +47,5 @@ app.use(function (err, req, res, next) {
   res.json("error");
 });
 
+app.listen(8081)
 module.exports = app;
