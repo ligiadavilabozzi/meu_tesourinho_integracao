@@ -47,5 +47,5 @@ app.use(function (err, req, res, next) {
   res.json("error");
 });
 
-app.listen(8081)
+app.listen(8081, ()=>{console.log("Servidor rodando")}); 
 module.exports = app;

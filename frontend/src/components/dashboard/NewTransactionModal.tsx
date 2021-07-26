@@ -83,7 +83,7 @@ export function NewTransactionModal({
                         onClick={() => { setType('deposit') }}
                         activeColor="green"
                     >
-                         <img src={incomeImg} alt="Entrada" /> 
+                        <img src={incomeImg} alt="Entrada" /> 
                         <span>Entrada</span>
                     </RadioBox>
 
@@ -94,7 +94,7 @@ export function NewTransactionModal({
                         activeColor="red"
                     >
 
-                         <img src={outcomeImg} alt="Saída" /> 
+                        <img src={outcomeImg} alt="Saída" /> 
                         <span>Saída</span>
                     </RadioBox>
 
@@ -110,6 +110,7 @@ export function NewTransactionModal({
                     Cadastrar
                 </button>
 
+                
             </Container>
 
 

@@ -1,6 +1,8 @@
 const { User } = require('../models');
 
 
+// const create = async(user) => await User.create(user)
+
 const searchUsers = async (email) => await User.findOne({
     where: {
         email: email
@@ -28,5 +30,6 @@ const update = async (params, userId) => await User.update({
 module.exports = {
     searchUsers,
     deletar,
-    update
+    update, 
+    
 }
