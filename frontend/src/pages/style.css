@@ -1,0 +1,14 @@
+body,
+html {
+  font-family: "Raleway", sans-serif;
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  color: #777;
+  font-weight: 400;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.espaco {
+  margin: 100px;
+}

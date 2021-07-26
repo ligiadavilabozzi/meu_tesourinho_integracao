@@ -39,8 +39,8 @@ export const register = (username, email, password) => (dispatch) => {
     );
 };
 
-export const login = (username, password) => (dispatch) => {
-    return AuthService.login (username, password).then ((data) => {
+export const login = (email, password) => (dispatch) => {
+    return AuthService.login (email, password).then ((data) => {
         dispatch ({
             type: LOGIN_SUCCESS,
             payload: { user:data },

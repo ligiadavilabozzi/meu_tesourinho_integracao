@@ -5,7 +5,8 @@ const config = require('../config/auth.config')
 const jwt = require('jsonwebtoken')
 
 const authUser = async (req, res) => {
-  const { email, senha } = req.body
+  const { email, password } = req.body
+  console.log(req.body)
   const usuarioValidation = await search.searchUsers(email)
 
   let errors = validationResult(req);
@@ -18,7 +19,7 @@ const authUser = async (req, res) => {
     res.status(404).json({ messenge: "Email not found!" })
   }
 
-  if (!bcrypt.compareSync(senha, usuarioValidation.senha)) {
+  if (!bcrypt.compareSync(password, usuarioValidation.password)) {
     return res.status(401).json({
       acessToken: null,
       messenge: "invalid password"
@@ -32,7 +33,7 @@ const authUser = async (req, res) => {
 
   return res.status(200).json({
     message: "successfully connected",
-    user: usuarioValidation.nome,
+    user: usuarioValidation.username,
     email: usuarioValidation.email,
     acessToken: token
   })

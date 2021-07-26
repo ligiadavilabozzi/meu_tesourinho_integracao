@@ -1,4 +1,4 @@
-const { User } = require('../models/user.model');
+const { User } = require('../models');
 
 
 const searchUsers = async (email) => await User.findOne({
@@ -14,7 +14,7 @@ const deletar = async (id) => await User.destroy({
 });
 
 const update = async (params, userId) => await User.update({
-    nome: params.nome,
+    username: params.nome,
     email: params.email
 },
     {
