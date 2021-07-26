@@ -74,7 +74,7 @@ const Login = (props) => {
             />
             <p>Seja bem-vindo!</p>
           </div>
-          <Form onSubmit={handleLogin} ref={form}>
+          <Form onSubmit={handleLogin} ref={form} className= "form">
             <div className="form-group">
               <label htmlFor="username">Usuário</label>
               <Input

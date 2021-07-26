@@ -9,6 +9,20 @@ html {
   height: 100% !important;
 }
 
+.btn {
+  width: 160px;
+  height: 30px;
+  background-color:#33A9AB;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 5px
+}
+
 .espaco {
   margin: 100px;
+}
+
+.navbar-item {
+  font-size: 12px;
 }

@@ -108,7 +108,7 @@ const Register = () => {
                   alt="Logo Meu Tesourinho"
                 />
               </div>
-              <h1 className="h1singup">Cadastre-se</h1>
+              <p className="h1singup">Cadastre-se agora:</p>
               <Form onSubmit={handleRegister} ref={form}>
                 {!successfull && (
                   <div>

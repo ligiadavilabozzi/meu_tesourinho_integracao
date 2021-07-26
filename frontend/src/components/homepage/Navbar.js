@@ -14,8 +14,8 @@ export const Navbar = (props) => {
           <img
             className="d-inline-block align-top"
             src="./img/logo/logo-tesourinhocolorido.png"
-            width="100"
-            height="40"
+            href= "/"
+            width="130"
           />
         </a>
         <button
