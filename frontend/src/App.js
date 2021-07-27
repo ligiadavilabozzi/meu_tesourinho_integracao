@@ -11,7 +11,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Homepage from "./pages/Homepage";
-import Profile from "./pages/Profile";
+
 
 
 
@@ -22,7 +22,6 @@ const App = () => {
             <Route exact path= {Routes.Login} component= {Login}/>
             <Route exact path= {Routes.Register} component= {Register}/>
             <Route exact path={Routes.Dashboard} component={Dashboard}/>
-            <Route exact path={Routes.Profile} component={Profile}/>
         </Router>
     );
 };

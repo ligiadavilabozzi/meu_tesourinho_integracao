@@ -46,6 +46,11 @@ export const Navbar = (props) => {
                 Cadastre-se
               </a>
             </li>
+            <li className="navbar-item">
+              <a href="/dashboard" className="nav-link">
+                Dashboard
+              </a>
+            </li>
           </ul>
         </div>
       </div>
