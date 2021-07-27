@@ -5,10 +5,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import './server/server'
 
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import { Dashboard } from "./pages/Dashboard";
+import Dashboard from "./pages/Dashboard";
 import Homepage from "./pages/Homepage";
 import Profile from "./pages/Profile";
 

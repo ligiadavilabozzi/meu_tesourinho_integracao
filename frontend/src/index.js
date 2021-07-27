@@ -46,6 +46,13 @@ createServer({
 
       return schema.create("transaction", data);
     });
+
+    this.delete("/transactions/:id", (schema, request)=>{
+      let id = request.params.id 
+
+      return schema.transactions.find(id).destroy()
+
+    })
   },
 });
 
